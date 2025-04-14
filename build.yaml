@@ -21,3 +21,5 @@
 include:
   - board: seeeduino_xiao_ble
     shield: hummingbird
+  - board: seeeduino_xiao_ble
+    shield: tern_ble
