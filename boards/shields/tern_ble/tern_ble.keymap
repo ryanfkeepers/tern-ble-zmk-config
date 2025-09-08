@@ -471,9 +471,9 @@
             //              ╭─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────╮
                               &kp HOME      &kp UP        &kp END       &kp PG_UP       &kp C_VOL_UP  &mkp LCLK     &mmv MOVE_UP  &mkp RCLK
             //╭─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╮
-                &none         &kp LEFT      &kp DOWN      &kp RIGHT     &kp PG_DN       &kp C_VOL_DN  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none
+                &none         &kp LA(LEFT)  &kp DOWN      &kp LA(RIGHT) &kp PG_DN       &kp C_VOL_DN  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none
             //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-	        &none         &kp LA(LEFT)  &none         &kp LA(RIGHT)                               &kp C_PREV    &kp K_PP      &kp C_NEXT    &none
+	        &none         &kp LEFT      &kp DOWN      &kp RIGHT                                   &kp C_PREV    &kp K_PP      &kp C_NEXT    &none
             //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────╮ ╭─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                            &mo 3        &trans          &trans        &trans
             //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
