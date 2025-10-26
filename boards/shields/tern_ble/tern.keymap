@@ -8,6 +8,18 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+/*
+ *                       UNIVERSAL KEY POSITION NAMES
+ *          alphas & combos should be limited to 3x5+2 common core
+ *         ╭─────────────────╮                  ╭─────────────────╮
+ *     ╭───╯   0   1   2   3 │                  │  4   5   6   7  ╰───╮
+ *     │   8   9  10  11  12 │                  │ 13  14  15  16  17  |
+ *     |  18  19  20  21     │                  │     22  23  24  25  |
+ *     ╰────────────╮ 26  27 |                  | 28  29 ╭────────────╯
+ *                  ╰────────╯                  ╰────────╯
+ *
+ */
+
 #define DEF 0
 #define NAV 1
 #define SYM 2
@@ -232,11 +244,14 @@
         ALPHA {
             display-name = "Alphabet";
 
-            // -----------------------------------------------------------------------------------------
-            // |     |  C  |  L   |  D  | ESC |   | BKSP |  I  |  O  |  U  |     |
-            // |  M  |  S  |  R   |  T  |  Q  |   |  Y   |  E  |  A  |  H  |  P  |
-            // |  F  |  Fn | Cmds | Win |     |   |      |  /  |  ,  |  .  |  G  |
-            // |     |     |      |  N  |  "  |   | SHFT | SPC |     |     |     |
+/*
+ *         ╭─────────────────╮   ╭─────────────────╮
+ *     ╭───╯   c   l  d  esc │   │ bksp i   o   u  ╰───╮
+ *     │   m   s   r  t   q  │   │  y   e   a   h   p  |
+ *     |   f  fn cmd  win    │   │      /   ,   .   g  |
+ *     ╰────────────╮ n   "  |   | sft spc╭────────────╯
+ *                  ╰────────╯   ╰────────╯
+ */
 
             bindings = <
 &ht_ck 0 C   &ht_npi W L  &ht_npi K D  &kp ESCAPE                   &kp BSPC         &ht_ing 0 I              &kp O                   &ht_qu 0 U
